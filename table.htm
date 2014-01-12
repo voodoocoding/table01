@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+</head>
+<style>
+
+h1 {
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+table {
+	width: 75%;
+	margin: auto;
+	border-collapse:collapse;
+
+  	font-family: Verdana, Arial, Helvetica, sans-serif;
+  	font-size: 14px;
+
+  	color: #000000;
+  }
+
+
+tbody {
+ 	background:lightgreen;
+}
+
+th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+  	font-size: 14px;
+	font-weight: bold;
+ 	padding:10px ;
+  	text-align:center;
+} 
+
+td {
+ 	padding:10px ;
+  	text-align:left;
+} 
+
+
+.bg {
+	background-color:lightgrey;
+}
+	
+</style>
+    <body>
+    	<table>
+            <thead>
+                <tr>
+                    <th>Element-Tag</th>
+                    <th>Elementbeschreibung</th>
+                    <th>Inline- oder Blockelement</th>
+                    <th>Semantisches HTML</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><code> &lt;a&gt;&lt;/a&gt;</code></th>
+                    <td>Verweis (Hyperlink) und Anker für Verweise</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>     
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;abbr&gt;&lt;/abbr&gt;</code></th>
+                    <td>Abkürzung</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;acronym&gt;&lt;/acronym&gt;</code></th>
+                    <td>Akronym</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;address&gt;&lt;/address&gt;</code></th>
+                    <td>Kontaktangabe zum Autor eines Inhalts (Credits)</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;area&gt;&lt;/area&gt;</code></th>
+                    <td>Verweis-sensitiver Bereich in einer Image-Map-Grafik</td>
+                    <td>weder noch</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;b&gt;&lt;/b&gt;</code></th>
+                    <td>Stilistische Hervorhebung im Text (üblicherweise fett dargestellt)</td>
+                    <td>Inline</td>
+                    <td>nein</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;base  /&gt;</code></th>
+                    <td>Basis-URL für Referenzen</td>
+                    <td>weder noch</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;bdo&gt;&lt;/bdo&gt;</code></th>
+                    <td>Richtungsänderung bei bidirektionalem Text</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;big&gt;&lt;/big&gt;</code></th>
+                    <td>Großschrift</td>
+                    <td>Inline</td>
+                    <td>nein</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;blockcode&gt;&lt;/blockcode&gt;</code></th>
+                    <td>Zitat in Form eines eigenen Textabsatzes</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;body&gt;&lt;/body&gt;</code></th>
+                    <td>Inhaltsbereich eines HTML-Dokuments</td>
+                    <td>weder noch</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;br  /&gt;</code></th>
+                    <td>Erzwungener Zeilenumbruch an der betreffenden Stelle</td>
+                    <td>Inline</td>
+                    <td>nein</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;button&gt;&lt;/button&gt;</code></th>
+                    <td>Schaltfläche in einem Formular</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;caption&gt;&lt;/caption&gt;</code></th>
+                    <td>Tabellenüberschrift / -unterschrift</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;cite&gt;&lt;/cite&gt;</code></th>
+                    <td>Zitat innerhalb eines Absatzes</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr> 
+                
+                <tr class="bg">
+                    <th><code> &lt;code&gt;&lt;/code&gt;</code></th>
+                    <td>Quelltext-Auszug innerhalb eines Absatzes</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;col  /&gt;</code></th>
+                    <td>Tabellenspalte</td>
+                    <td>weder noch</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;colgroup&gt;&lt;/colgroup&gt;</code></th>
+                    <td>Gruppe von Tabellenspalten</td>
+                    <td>weder noch</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;dd&gt;&lt;/dd&gt;</code></th>
+                    <td>Definition, Beschreibung, detaillierter Inhalt zu einem dt-Element</td>
+                    <td>Block / Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;del&gt;&lt;/del&gt;</code></th>
+                    <td>gelöschter Inhalt (Änderungsmarkierung)</td>
+                    <td>Block / Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;dfn&gt;&lt;/dfn&gt;</code></th>
+                    <td>Definition innerhalb eines Absatzes</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;div&gt;&lt;/div&gt;</code></th>
+                    <td>Allgemeiner Bereich</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;dl&gt;&lt;/dl&gt;</code></th>
+                    <td>Liste mit dt- und dd-Elementen, für Definitionslisten, Dialoge usw.</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;dt&gt;&lt;/dt&gt;</code></th>
+                    <td>Zu definierender Ausdruck in einer Definitionsliste, Sprechername in einem Dialog usw.</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;em&gt;&lt;/em&gt;</code></th>
+                    <td>emphatischer Ausdruck innerhalb eines Absatzes (z.B. überspitzte Formulierung)</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;fieldset&gt;&lt;/fieldset&gt;</code></th>
+                    <td>Gruppe von Elementen in einem Formular, Reiter in einem Dialog</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;form&gt;&lt;/form&gt;</code></th>
+                    <td>Formular, Dialog</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;h1&gt;&lt;/h1&gt;</code></th>
+                    <td>Überschrift 1. Ordnung</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;h2&gt;&lt;/h2&gt;</code></th>
+                    <td>Überschrift 2. Ordnung</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;h3&gt;&lt;/h3&gt;</code></th>
+                    <td>Überschrift 3. Ordnung</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;h4&gt;&lt;/h4&gt;</code></th>
+                    <td>Überschrift 4. Ordnung</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+               
+                
+                <tr class="bg">
+                    <th><code> &lt;h5&gt;&lt;/h5&gt;</code></th>
+                    <td>Überschrift 5. Ordnung</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;h6&gt;&lt;/h6&gt;</code></th>
+                    <td>Überschrift 6. Ordnung</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;head&gt;&lt;/head&gt;</code></th>
+                    <td>Kopfbereich eines HTML-Dokuments</td>
+                    <td>weder noch</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;hr  /&gt;</code></th>
+                    <td>Trennlinie</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;html&gt;&lt;/html&gt;</code></th>
+                    <td>Dokumentelement von HTML-Dokumenten, schließt das gesamte Dokument ein</td>
+                    <td>weder noch</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;i&gt;&lt;/i&gt;</code></th>
+                    <td>im Sinne der Erklärung rechts; spezieller Ausdruck im Text, z.B. Fachterminus oder Idiom (üblicherweise kursiv dargestellt)</td>
+                    <td>Inline</td>
+                    <td>nein</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;img  /&gt;</code></th>
+                    <td>Referenzierte und eingebettete Grafik</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;input  /&gt;</code></th>
+                    <td>Formularelement, verwendbar für diverse Typen wie Eingabefelder, Schaltflächen, Auswahlfelder usw.</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;ins&gt;&lt;/ins&gt;</code></th>
+                    <td>Eingefügter Inhalt (Änderungsmarkierung)</td>
+                    <td>Block / Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;kbd&gt;&lt;/kbd&gt;</code></th>
+                    <td>Darstellung eines über Tastatur einzugebenden Textes im Text</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;label&gt;&lt;/label&gt;</code></th>
+                    <td>Beschriftungstext eines Formularfeldes</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;legend&gt;&lt;/legend&gt;</code></th>
+                    <td>Überschrift für eine fieldset-Gruppe von Elementen in einem Formular</td>
+                    <td>weder noch</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;li&gt;&lt;/li&gt;</code></th>
+                    <td>Listenpunkt in einer ul-, ol- oder menu-Liste</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;link  /&gt;</code></th>
+                    <td>Logische Beziehungen der aktuellen Webseite zu anderen Webseiten</td>
+                    <td>weder noch</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;map&gt;&lt;/map&gt;</code></th>
+                    <td>Bereich für verweis-sensitive Grafiken</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;meta  /&gt;</code></th>
+                    <td>Meta-Angabe für nicht im Inhalt sichtbare Dokumentinformationen oder für Anweisungen an den Webserver</td>
+                    <td>weder noch</td>
+                    <td>nein</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;noscript&gt;&lt;/noscript&gt;</code></th>
+                    <td>Bereich für Inhalte, die angezeigt werden, wenn JavaScript im Browser deaktiviert oder nicht verfügbar ist</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;object&gt;&lt;/object&gt;</code></th>
+                    <td>Eingebettetes Objekt, geeignet für spezielle Multimedia-Objekte, Java-Applets usw.</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;ol&gt;&lt;/ol&gt;</code></th>
+                    <td>Geordnete (z.B. nummerierte) Liste</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;optgroup&gt;&lt;/optgroup&gt;</code></th>
+                    <td>Gruppe von Auswahlmöglichkeiten in einer Auswahlliste</td>
+                    <td>weder noch</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;option&gt;&lt;/option&gt;</code></th>
+                    <td>Auswahlmöglichkeit in einer Auswahlliste</td>
+                    <td>weder noch</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;p&gt;&lt;/p&gt;</code></th>
+                    <td>Paragraph, Absatz</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;param  /&gt;</code></th>
+                    <td>Parameter eines Objekts bei object-Element</td>
+                    <td>weder noch</td>
+                    <td>nein</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;pre&gt;&lt;/pre&gt;</code></th>
+                    <td>Präformatierter Text (alle Whitespace-Zeichen werden im Browser so dargestellt wie im Text enthalten)</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;q&gt;&lt;/q&gt;</code></th>
+                    <td>Wörtliche Rede in einem Text</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;samp&gt;&lt;/samp&gt;</code></th>
+                    <td>Beispieltext in einem dokumentierenden Text</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;script&gt;&lt;/script&gt;</code></th>
+                    <td>Scriptbereich für JavaScript und andere Scriptsprachen</td>
+                    <td>Inline</td>
+                    <td>nein</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;select&gt;&lt;/select&gt;</code></th>
+                    <td>Auswahlliste in einem Formular</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;small&gt;&lt;/small&gt;</code></th>
+                    <td>kleiner dargestellter Text als Normalschrift</td>
+                    <td>Inline</td>
+                    <td>nein</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;span&gt;&lt;/span&gt;</code></th>
+                    <td>allgemeiner Bereich innerhalb eines Absatzes</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;strong&gt;&lt;/strong&gt;</code></th>
+                    <td>stark betonter Inhalt im Text</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;style&gt;&lt;/style&gt;</code></th>
+                    <td>Bereich für Stylesheet-Definitionen, z.B. in CSS</td>
+                    <td>weder noch</td>
+                    <td>nein</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;sub&gt;&lt;/sub&gt;</code></th>
+                    <td>Tiefgestellter Text</td>
+                    <td>Inline</td>
+                    <td>nein</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;sup&gt;&lt;/sup&gt;</code></th>
+                    <td>Hochgestellter Text</td>
+                    <td>Inline</td>
+                    <td>nein</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;table&gt;&lt;/table&gt;</code></th>
+                    <td>Tabelle</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;tbody&gt;&lt;/tbody&gt;</code></th>
+                    <td>Tabellenkörper mit den eigentlichen Daten</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;td&gt;&lt;/td&gt;</code></th>
+                    <td>Tabellenzelle</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;textarena&gt;&lt;/textarena&gt;</code></th>
+                    <td>Mehrzeiliger Eingabebereich in einem Formular</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;tfood&gt;&lt;/tfood&gt;</code></th>
+                    <td>Fußbereich in einer Tabelle, z.B. für summarische Daten</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;th&gt;&lt;/th&gt;</code></th>
+                    <td>Tabellenkopfzelle</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;thead&gt;&lt;/thead&gt;</code></th>
+                    <td>Kopfbereich einer Tabelle</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;title&gt;&lt;/title&gt;</code></th>
+                    <td>Titel eines HTML-Dokuments</td>
+                    <td>weder noch</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;tr&gt;&lt;/tr&gt;</code></th>
+                    <td>Tabellenzeile</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;tt&gt;&lt;/tt&gt;</code></th>
+                    <td>»Fernschreiber«-Text</td>
+                    <td>Inline</td>
+                    <td>nein</td>
+                </tr>
+                
+                <tr class="bg">
+                    <th><code> &lt;ul&gt;&lt;/ul&gt;</code></th>
+                    <td>Unsortierte Liste (Aufzählungsliste)</td>
+                    <td>Block</td>
+                    <td>semantisch</td>
+                </tr>
+                
+                <tr>
+                    <th><code> &lt;var&gt;&lt;/var&gt;</code></th>
+                    <td>Variabler Name in einem dokumentierenden Text</td>
+                    <td>Inline</td>
+                    <td>semantisch</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    
+
+		</body></html>
